@@ -4,7 +4,7 @@ class Post < ActiveRecord::Base
   validate :is_title_case
 
   before_validation :make_title_case #When modifying an attribute of the model, use before_validation
-  before_save :email_author_about_post #doing some other action, then use before_save
+  #before_save :email_author_about_post #doing some other action, then use before_save
 
   private
 
